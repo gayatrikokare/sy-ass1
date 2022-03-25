@@ -1,0 +1,48 @@
+#include<stdio.h>
+int main()
+{
+    int  ch,a,b;
+    int choice;
+
+doit:
+
+printf("1. addition\n2.substraction\n3.multiplication\n4.division\n");
+    printf("enter your choice");
+    scanf("%d",&ch);
+
+
+
+    switch(ch)
+    {
+        case 1:printf("enter that two no you want to add\n");
+               scanf("%d%d",&a,&b);
+               printf("addition is=%d\n",a+b);
+               break;
+        case 2:printf("enter that two no you want to substract\n");
+               scanf("%d%d",&a,&b);
+               printf("substraction is=%d\n",a-b);
+               break;
+        case 3:printf("enter that two no you want to multiplication\n");
+               scanf("%d%d",&a,&b);
+               printf("multiplication is=%d\n",a*b);
+               break;
+        case 4:printf("enter that two no you want to dividation\n");
+               scanf("%d%d",&a,&b);
+               printf("division is=%d\n",a/b);
+               break;
+        default :printf("wrong operation");
+
+
+    }
+    printf("do you want try  another operation enter '1' or '0'");
+    scanf("%d",&choice);
+    if(choice==1)
+    {
+        goto doit;
+    }
+    else
+    {printf("************** thank you *************");}
+
+    return 0;
+
+}
